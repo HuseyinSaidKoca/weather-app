@@ -8,6 +8,7 @@ A simple weather app that includes a Reactjs frontend, Nginx apigateway and Node
 With the help of this project, I have learnt:
 - How do Dockers work? 
 - Dockerizing a backend application
+- Docker compose method and docker networks
 - Caching mechanism with Redis
 - API Gateway consept
 - Configuring an API Gateway with Nginx
