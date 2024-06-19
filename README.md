@@ -1,17 +1,17 @@
 
 # Weather App
-A simple weather app that includes a Reactjs frontend, Nginx apigateway and Nodejs backend.
+A simple weather app that includes a Reactjs frontend, Nginx API gateway and Nodejs backend.
 
 
 ## Lessons Learned
 
-With the help of this project, I have learnt:
+With the help of this project, I have learned:
 - How do Dockers work? 
 - Dockerizing a backend application
 - Docker compose method and docker networks
 - Caching mechanism with Redis
-- API Gateway consept
+- API Gateway concept
 - Configuring an API Gateway with Nginx
 
-I have faced with problems while deploying frontend and backend to the public usage. I had to solve the CORS Policy issue while sending POST requests to my backend. So, I did research on this subject, how does the CORS Policy works. Finally, I solved the problem with proper adjusments. 
+I have faced problems while deploying frontend and backend to public usage. I had to solve the CORS Policy issue while sending POST requests to my backend. So, I researched how the CORS Policy works. Finally, I solved the problem with proper adjustments. 
 
