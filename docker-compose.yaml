@@ -1,0 +1,35 @@
+version: '3'
+services:
+  redis:
+    image: redis:latest
+    container_name: my-redis-container
+    ports:
+      - "6379:6379"
+    networks:
+      - webnet
+
+  node-app:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: my-node-app-container
+    ports:
+      - "5000:5000"
+    environment:
+      - REDIS_HOST=redis
+    depends_on:
+      - redis
+    networks:
+      - webnet
+
+  nginx:
+    build:
+      context: ./nginx_gateway
+    container_name: nginx-container
+    networks:
+      - webnet
+    ports:
+      - "4000:4000"
+networks:
+  webnet:
+    driver: bridge
